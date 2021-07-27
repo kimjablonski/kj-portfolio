@@ -1,0 +1,527 @@
+#container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@font-face {
+  font-family: 'archistico';
+  src: url('archistico_simple-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('archistico_simple-webfont.woff 2') format('woff 2'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'existence';
+  src: url('existence-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('existence-light-webfont.woff2') format('woff2'), /* Pretty Modern Browsers */
+			 url('existence-light-webfont.ttf') format('ttf'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'avenir next';
+  src:"fonts/Avenir Next.ttc"
+}
+
+@font-face {
+  font-family: 'avenir book';
+  src:"fonts/AvenirLTProBook.otf"
+}
+
+@font-face {
+  font-family: 'avenir light';
+  src:"fonts/AvenirLTProLight.otf"
+}
+
+
+.clear {
+	clear:both
+}
+
+
+body {
+  background: #111b25;
+  font-family: "existence", Helvetica, Arial, sans-serif;
+  color: #fff;
+
+
+}
+
+h1 {
+  	font-family: 'avenir book';
+		font-size:35pt;
+		font-variant: small-caps;
+		color: black;
+		font-kerning: 4px;
+}
+
+.info {
+  max-width: 793px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.featureImage {
+  margin: 0 auto;
+  white-space: nowrap;
+  max-width:2000px;
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: url(../images/website_reveal_21-02.jpg) repeat fixed;
+  background-position: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  font-size: 0;
+}
+
+.ih {
+  width: 40px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  padding: 2px;
+  -webkit-transition: all 1.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
+  background: url(../images/website_header_21-01.jpg) repeat fixed;
+  background-size: cover;
+  background-position: 50% 100%;
+  border-radius: 0%;
+}
+
+.ih:hover {
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  opacity: 0;
+}
+
+.header {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  top: 200px;
+  font-size: 40px;
+  color: beige;
+  text-shadow: 0 5px 17px rgba(87, 87, 80, 0.85);
+}
+
+#introduction {
+	background-color: #white;
+	height: 1200px;
+	width:100%;
+  margin-bottom: 10px;
+  padding-top:10px;
+}
+
+h5 {
+		text-align: left;
+		width:420px;
+		color: black;
+		font-size:16px;
+		line-height: 26px;
+		margin-left: 18%;
+		float: left;
+	}
+
+	#kim img{
+		position: relative;
+		padding-top:28px;
+		float:center;
+		width:80%;
+		margin-left:10%;
+	}
+
+
+
+	#myList li{
+		float:left;
+		margin-right:30px;
+	}
+
+	#myList .rowEnd{
+		margin-right:0px;
+	}
+
+
+	.hidden{
+		display:none;
+	}
+
+
+.move {
+  display: block;
+  position: absolute;
+}
+
+.element {
+  background: url(../images/memphis_chair.png);
+  width: 300px;
+  height: 418px;
+}
+
+
+
+li {
+  -webkit-perspective: 552px;
+          perspective: 552px;
+}
+
+.info {
+  -webkit-transform: rotate3d(1, 0, 0, 90deg);
+          transform: rotate3d(1, 0, 0, 90deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color: #6d6e6e ;
+	opacity: 0.95;
+}
+
+.in-top .info {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: in-top 300ms ease 0ms 1 forwards;
+          animation: in-top 300ms ease 0ms 1 forwards;
+}
+
+.in-right .info {
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-animation: in-right 300ms ease 0ms 1 forwards;
+          animation: in-right 300ms ease 0ms 1 forwards;
+}
+
+.in-bottom .info {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-animation: in-bottom 300ms ease 0ms 1 forwards;
+          animation: in-bottom 300ms ease 0ms 1 forwards;
+}
+
+.in-left .info {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: in-left 300ms ease 0ms 1 forwards;
+          animation: in-left 300ms ease 0ms 1 forwards;
+}
+
+.out-top .info {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: out-top 300ms ease 0ms 1 forwards;
+          animation: out-top 300ms ease 0ms 1 forwards;
+}
+
+.out-right .info {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-animation: out-right 300ms ease 0ms 1 forwards;
+          animation: out-right 300ms ease 0ms 1 forwards;
+}
+
+.out-bottom .info {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-animation: out-bottom 300ms ease 0ms 1 forwards;
+          animation: out-bottom 300ms ease 0ms 1 forwards;
+}
+
+.out-left .info {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-animation: out-left 300ms ease 0ms 1 forwards;
+          animation: out-left 300ms ease 0ms 1 forwards;
+}
+
+@-webkit-keyframes in-top {
+  from {
+    -webkit-transform: rotate3d(-1, 0, 0, 108.75deg);
+            transform: rotate3d(-1, 0, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes in-top {
+  from {
+    -webkit-transform: rotate3d(-1, 0, 0, 108.75deg);
+            transform: rotate3d(-1, 0, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes in-right {
+  from {
+    -webkit-transform: rotate3d(0, -1, 0, 108.75deg);
+            transform: rotate3d(0, -1, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes in-right {
+  from {
+    -webkit-transform: rotate3d(0, -1, 0, 108.75deg);
+            transform: rotate3d(0, -1, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes in-bottom {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 108.75deg);
+            transform: rotate3d(1, 0, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes in-bottom {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 108.75deg);
+            transform: rotate3d(1, 0, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes in-left {
+  from {
+    -webkit-transform: rotate3d(0, 1, 0, 108.75deg);
+            transform: rotate3d(0, 1, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes in-left {
+  from {
+    -webkit-transform: rotate3d(0, 1, 0, 108.75deg);
+            transform: rotate3d(0, 1, 0, 108.75deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes out-top {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(-1, 0, 0, 108.75deg);
+            transform: rotate3d(-1, 0, 0, 108.75deg);
+  }
+}
+@keyframes out-top {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(-1, 0, 0, 107.6deg);
+            transform: rotate3d(-1, 0, 0, 107.6deg);
+  }
+}
+@-webkit-keyframes out-right {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, -1, 0, 108.75deg);
+            transform: rotate3d(0, -1, 0, 108.75deg);
+  }
+}
+@keyframes out-right {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, -1, 0, 108.75deg);
+            transform: rotate3d(0, -1, 0, 108.75deg);
+  }
+}
+@-webkit-keyframes out-bottom {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 108.75deg);
+            transform: rotate3d(1, 0, 0, 108.75deg);
+  }
+}
+@keyframes out-bottom {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 107.6deg);
+            transform: rotate3d(1, 0, 0, 107.6deg);
+  }
+}
+@-webkit-keyframes out-left {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 108.75deg);
+            transform: rotate3d(0, 1, 0, 108.75deg);
+  }
+}
+@keyframes out-left {
+  from {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 108.75deg);
+            transform: rotate3d(0, 1, 0, 108.75deg);
+  }
+}
+
+
+ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+li {
+  position:relative;
+  float: left;
+  width:375px;
+  height:350px;
+  margin-left: 25px;
+	margin-top: 30px;
+  list-style: none;
+}
+
+li a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+li p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+li .normal {
+  width: 375px;
+  height: 350px;
+  background-color: white;
+  box-shadow: inset 0 0px 20px #e6ebed;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+
+li .normal svg {
+  pointer-events: none;
+  width: 375px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  margin: 0 auto 5px;
+  text-align: center;
+	margin-bottom: 90px;
+}
+
+#about h1{
+	padding-top: 200px;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+h3 {
+	margin-top: 95px;
+  font-family: 'avenir book';
+	letter-spacing: 2px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 38px;
+}
+
+h4{
+	margin-top:-20px;
+	font-family: 'avenir light';
+  letter-spacing: 2px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.grid {
+	display:inline-block;
+  background-color: white;
+	margin-left:4.5%;
+  margin-right: auto;
+	width: 100%;
+	margin-bottom:200px;
+}
+
+header {
+  font-family: 'avenir', serif;
+  text-align: center;
+  margin: 50px 0 25px;
+  color: white;
+}
+
+header p {
+  margin: 0;
+  color: white;
+}
+
+.image {
+    display: none;
+}
+
+.contact{
+	height:600px;
+	color: #6d6e6e;
+}
+
+
+#contact{
+	display: block;
+  margin-left:10%;
+  width: 80%;
+}

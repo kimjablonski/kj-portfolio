@@ -1,0 +1,101 @@
+#container {
+	width: 978px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@font-face {
+  font-family: 'existence';
+  src: url('existence-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('existence-light-webfont.woff2') format('woff2'), /* Pretty Modern Browsers */
+			 url('existence-light-webfont.ttf') format('ttf'), /* Pretty Modern Browsers */
+}
+
+
+#navbar ul {
+ margin: 0 auto;
+ padding-top:20px;
+ width:750px;
+ height: 50px;
+ margin-top: 300px;
+ margin-bottom: 40px;
+ list-style-type: none;
+ }
+
+ #navbar ul li {
+  display:inline;
+  float:left;
+  margin-left:3.5%;
+  margin-right:20px;
+  font-family: 'existence';
+  font-weight:bold;
+  font-size:23px;
+	 color: #6d6e6e;
+  }
+
+ #navbar ul li a {
+  display: block;
+  align: center;
+  text-decoration: none;
+  text-align:center;
+  width:170px;
+   color: #6d6e6e;
+  }
+
+#navbar ul li a:hover {
+ color: #000;
+ background-color: #fff;
+ }
+
+.clear{
+	clear:both;
+}
+
+#main{
+	padding-top:100px;
+	padding-bottom:100px;
+
+}
+
+#gradient{
+ font-family: sans-serif;
+ font-weight: lighter;
+ font-size: 16px;
+ padding-right:30px;
+ padding-bottom:30px;
+ width: 450px;
+ line-height: 26px;
+ float: left;
+ margin-left: 95px;
+ margin-right: 40px;
+}
+
+h1{
+ font-family: 'existence';
+ padding-top:100px;
+ font-size:30px;
+ margin-left: 95px;
+ align:left;
+ margin-bottom: -15px;
+ margin-bottom: 20px;
+}
+
+h2 {
+ font-family: sans-serif;
+ font-weight: lighter;
+ font-size:20px;
+ margin-left: 95px;
+ align:left;
+ margin-bottom: 20px;
+}
+
+#info{
+ font-family:sans-serif;
+ margin-top:-5px;
+ margin-left:80px;
+ font-weight:lighter;
+ font-size: 18px;
+ line-height: 30px;
+ font-kerning: normal;
+ text-align:left;
+}
